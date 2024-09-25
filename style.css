@@ -40,7 +40,7 @@ a:link, a:visited {
     text-decoration: underline;
 }
 
-a:active {
+link:hover {
     color: #631700;
     text-decoration: underline;
 }
