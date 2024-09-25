@@ -15,7 +15,7 @@ h1 {
     font-weight: bold;
 }
 
-h2 {
+h2 {s
     font-family: helvetica, sans-serif;
     font-size: 20pt;
     color: #423b32;
@@ -23,14 +23,14 @@ h2 {
 }
 
 h3 {
-    font-family: lucida sans, sans-serif;
+    font-family: trebuchet MS, sans-serif;
     font-size: 16pt;
     color: #363028;
     font-weight: normal;
 }
 
 p {
-    font-family: gill sans, sans-serif;
+    font-family: georgia, sans-serif;
     font-size: 14pt;
     color: #1c1204;
 }
