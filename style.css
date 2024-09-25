@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-    font-family: verdana, sans-serif;
+    font-family: georgia, sans-serif;
     font-size: 25pt;
     color: #544b40;
     font-weight: bold;
@@ -30,7 +30,7 @@ h3 {
 }
 
 p {
-    font-family: courier, sans-serif;
+    font-family: gill sans, sans-serif;
     font-size: 14pt;
     color: #1c1204;
 }
