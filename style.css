@@ -14,8 +14,7 @@
     padding: 0;
 }
  nav ul li {
-    display:inline-block;
-    list-style-type: none;
+    display:block;
     margin-right: 20px;
 }
 
@@ -35,6 +34,11 @@ nav ul li:last-child {
 
   nav > ul > li> a:hover {
     color: white;
+}
+
+nav li:hover > ul{
+    position: absolute;
+    display: block;
 }
 
 body {
