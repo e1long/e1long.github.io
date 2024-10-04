@@ -3,7 +3,8 @@
 nav {
     background-color: #d6cdbf;
     margin:0;
-    overflow:hidden;
+    padding: 0;
+    overflow: hidden;
   }
 
 nav ul{
@@ -34,7 +35,8 @@ body {
     font-size: 12pt;
     background-color: #f7f3ed;
     color: #2e271e;
-    margin: 40pt;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
