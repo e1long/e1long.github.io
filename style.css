@@ -36,6 +36,18 @@ nav ul li:last-child {
     color: white;
 }
 
+nav li > ul li{
+    display: block;
+}
+
+nav li > ul li a {
+    color: #58355E;
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+
 nav li:hover > ul{
     position: absolute;
     display: block;
