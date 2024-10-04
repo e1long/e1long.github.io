@@ -5,7 +5,6 @@
  nav {
     background-color: #d6cdbf;
     margin:0;
-    padding: 0;
     overflow: hidden;
 }
 
@@ -14,7 +13,8 @@
     padding: 0;
 }
  nav ul li {
-    display:block;
+    display:inline-block;
+    list-style-type:none;
     margin-right: 20px;
 }
 
@@ -23,9 +23,9 @@ nav ul li:last-child {
 }
 
   nav > ul > li > a {
+    color: #58355E;
     font-family: georgia, sans-serif;
     font-weight: bold;
-    color: #58355E;
     display: block;
     line-height: 2em;
     padding: 0.5em 0.5em;
