@@ -52,6 +52,7 @@ nav li > ul li {
 
 nav li > ul li a {
     color: #58355E;
+    background-color: #a69986; 
     display: block;
     line-height: 2em;
     padding: 0.5em 2em;
@@ -59,7 +60,6 @@ nav li > ul li a {
 }
 
 nav li > ul li a:hover {
-    background-color: #a69986; 
     color: white; 
 }
 
