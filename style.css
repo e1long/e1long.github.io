@@ -6,9 +6,6 @@ nav {
     background-color: #d6cdbf;
     margin: 0;
     overflow: hidden;
-    position: sticky; 
-    top: 0; 
-    z-index: 1000; 
 }
 
 nav ul {
@@ -19,13 +16,6 @@ nav ul {
 nav ul li {
     display: inline-block;
     list-style-type: none;
-    margin-left: 20px;
-    margin-right: 20px;
-    position: relative; 
-}
-
-nav ul li:last-child {
-    margin-right: 0;
 }
 
 nav > ul > li > a {
@@ -36,22 +26,6 @@ nav > ul > li > a {
     line-height: 2em;
     padding: 0.5em 0.05em;
     text-decoration: none !important;
-}
-
-nav > ul > li > a:hover {
-    color: white; 
-}
-
-nav li > ul {
-    display: none; 
-    position: absolute;
-    left: 0;
-    top: 100%; 
-    z-index: 999; 
-}
-
-nav li:hover > ul {
-    display: block; 
 }
 
 nav li > ul li {
@@ -67,9 +41,14 @@ nav li > ul li a {
     text-decoration: none;
 }
 
-nav li > ul li a:hover {
-    color: white; 
+nav li > hover {
+    color: white;
     background-color: #d6cdbf;
+}
+
+nav li:hover > ul {
+    position: absolute;
+    display: block; 
 }
 
 body {
