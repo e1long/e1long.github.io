@@ -1,14 +1,14 @@
 /* CSS Styling File */
 
- @charset "UFT-8";
+@charset "UTF-8";
 
- nav {
+nav {
     background-color: #d6cdbf;
     margin: 0;
     overflow: hidden;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
 }
 
 nav ul {
@@ -20,6 +20,7 @@ nav ul li {
     display: inline-block;
     list-style-type: none;
     margin-right: 20px;
+    position: relative; 
 }
 
 nav ul li:last-child {
@@ -37,12 +38,14 @@ nav > ul > li > a {
 }
 
 nav > ul > li > a:hover {
-    color: white;
+    color: white; 
 }
 
 nav li > ul {
-    display: none;
+    display: none; 
     position: absolute;
+    left: 0;
+    top: 100%; 
 }
 
 nav li:hover > ul {
@@ -50,7 +53,7 @@ nav li:hover > ul {
 }
 
 nav li > ul li {
-    display: block;
+    display: block; 
 }
 
 nav li > ul li a {
@@ -58,7 +61,7 @@ nav li > ul li a {
     background-color: #dcd6cd; 
     display: block;
     line-height: 2em;
-    padding: 0.5em 2em;
+    padding: 0.5em 2em; 
     text-decoration: none;
 }
 
