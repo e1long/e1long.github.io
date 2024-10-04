@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/*navigation bar */
 .navbar {
     overflow: hidden;
     background-color: #d6cdbf;
@@ -61,6 +62,7 @@
 .dropdown:hover .dropdown-content {
     display: block;
 }
+/*navigation bar over*/
 
 body {
     font-family: arial, sans-serif;
@@ -102,6 +104,7 @@ p {
     margin: 20px;
 }
 
+/* "what's your name" return answer formatting */
 .output-h2 {
     font-family: helvetica, sans-serif;
     font-size: 22pt;
@@ -110,6 +113,7 @@ p {
     margin: 20px;
 }
 
+/* link formatting */
 a:link, a:visited {
     color: #7a6c58;
     text-decoration: underline;
@@ -120,6 +124,7 @@ link:hover {
     text-decoration: underline;
 }
 
+/* table formatting */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -147,6 +152,7 @@ td.links {
     text-align: left;
 }
 
+/* image formating */
 .indented-image {
     margin-left: 20px; 
 }
