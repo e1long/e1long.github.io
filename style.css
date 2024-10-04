@@ -55,8 +55,7 @@ nav li > ul li a {
     background-color: #dcd6cd; 
     display: block;
     line-height: 2em;
-    padding: 0.5em 2em;
-    min-width: 100px;
+    padding: 0.5em 0.5em;
     text-decoration: none;
 }
 
