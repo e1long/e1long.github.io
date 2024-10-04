@@ -79,4 +79,22 @@ td.links {
     text-align: left;
 }
 
+.container {
+    width: 100%;
+    overflow: auto; 
+    margin: 20px;
+}
+
+.image-section {
+    float: right;
+    margin-right: 20px; 
+    max-width: 300px; 
+    height: auto;
+}
+
+.text-section {
+    overflow: hidden;
+}
+
+
 
