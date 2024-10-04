@@ -65,6 +65,14 @@ nav li > ul li a:hover {
     background-color: #d6cdbf;
 }
 
+body {
+    font-family: arial, sans-serif;
+    font-size: 12pt;
+    color: #2e271e;
+    margin: 0;
+    padding: 0;
+}
+
 h1 {
     font-family: georgia, sans-serif;
     font-size: 25pt;
