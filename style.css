@@ -1,5 +1,23 @@
 @charset "UTF-8";
 
+nav{
+    background-color: #d6cdbf;
+    position: absolute;
+    width: 150px;
+    height: 100%;
+  }
+  nav a
+  {
+    padding: 15px;
+    display: block;
+    font-size: 25pt;
+    color: #58355E;
+  }
+  nav a:hover
+  {
+    color: #a69986;
+  }
+
 body {
     font-family: arial, sans-serif;
     font-size: 12px;
