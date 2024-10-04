@@ -1,8 +1,8 @@
 /* CSS Styling File */
 
-@charset "UTF-8";
+ @charset "UFT-8";
 
-nav {
+ nav {
     background-color: #d6cdbf;
     margin: 0;
     overflow: hidden;
@@ -37,12 +37,9 @@ nav > ul > li > a:hover {
     color: white;
 }
 
-/* Submenu Styling */
 nav li > ul {
     display: none;
     position: absolute;
-    padding: 0;
-    margin: 0;
 }
 
 nav li:hover > ul {
@@ -55,21 +52,18 @@ nav li > ul li {
 
 nav li > ul li a {
     color: #58355E;
-    background-color: #dcd6cd;
+    background-color: #dcd6cd; 
     display: block;
     line-height: 2em;
     padding: 0.5em 2em;
     text-decoration: none;
-    min-width: 150px; /* Ensure uniform width */
-    box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
 
 nav li > ul li a:hover {
-    color: white;
+    color: white; 
     background-color: #d6cdbf;
 }
 
-/* General Body and Text Styling */
 body {
     font-family: arial, sans-serif;
     font-size: 12pt;
@@ -122,7 +116,6 @@ link:hover {
     text-decoration: underline;
 }
 
-/* Table Styling */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -130,7 +123,7 @@ table {
 
 td {
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #ccc
 }
 
 .text-wrapper {
