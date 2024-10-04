@@ -9,7 +9,7 @@
 .navbar a {
     float: left;
     font-size: 16px; 
-    color: #58355E;
+    color: #2e271e;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -24,7 +24,7 @@
     font-size: 16px; 
     border: none;
     outline: none;
-    color: #58355E; 
+    color: #2e271e; 
     padding: 14px 16px;
     background-color: inherit;
     font-family: georgia, sans-serif; 
@@ -47,7 +47,7 @@
 
 .dropdown-content a {
     float: none;
-    color: #58355E; 
+    color: #2e271e; 
     padding: 12px 16px;
     text-decoration: none;
     display: block;
