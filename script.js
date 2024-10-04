@@ -1,4 +1,6 @@
 //JavaScript
+
+// "what's your name" button
 document.getElementById("nameButton").addEventListener("click", function() {
     const name = prompt("Please enter your name:");
     if (name) {
@@ -6,6 +8,7 @@ document.getElementById("nameButton").addEventListener("click", function() {
     }
 });
 
+// enlarged image when clicked
 document.getElementById("myImage").addEventListener("click", function() {
     this.style.width = "400px";
 });
@@ -14,15 +17,8 @@ document.getElementById("myImage").addEventListener("mouseout", function() {
     this.style.width = "200px";
 });
 
-document.getElementById("myImage").addEventListener("mouseover", function() {
-    this.style.opacity = "0.7"; 
-});
 
-document.getElementById("myImage").addEventListener("mouseout", function() {
-    this.style.opacity = "1"; 
-});
-
-
+// onmouseover/onmouseout events
 document.addEventListener('DOMContentLoaded', () => {
     const navItems = document.querySelectorAll('.navbar a, .dropdown .dropbtn');
 
