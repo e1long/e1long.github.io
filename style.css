@@ -1,25 +1,29 @@
 @charset "UTF-8";
 
-body,html{
-    height:100%;
+nav {
+    background-color: #d6cdbf;
+    margin:0;
+    overflow:hidden;
+  }
+
+nav ul{
+    margin:0;
+    padding: 0;
+}
+nav ul li {
+    display:inline-block;
+    list-style-type: none;
 }
 
-nav{
-    background-color: #d6cdbf;
-    position: fixed;
-    width: 20%;
-    min-width:150px;
-    height: 100%;
+  nav > ul > li > a {
+    color: #58355E;
+    display: block;
+    line-height: 2em;
+    padding: 0.5 em 0.5 em;
+    text-decoration: none;
   }
 
-  nav a {
-    padding: 15px;
-    display: block;
-    font-size: 22pt;
-    color: #58355E;
-  }
-  nav a:hover
-  {
+  nav > ul > li> a:hover {
     color: white;
   }
 
