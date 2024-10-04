@@ -2,10 +2,9 @@
 
  @charset "UFT-8";
 
-nav {
+ nav {
     background-color: #d6cdbf;
     margin: 0;
-    padding: 0;
     overflow: hidden;
 }
 
@@ -30,7 +29,7 @@ nav > ul > li > a {
     font-weight: bold;
     display: block;
     line-height: 2em;
-    padding: padding: 0.5em 2em;
+    padding: 0.5em 0.5em;
     text-decoration: none !important;
 }
 
@@ -44,7 +43,6 @@ nav li > ul {
 }
 
 nav li:hover > ul {
-    position: absolute;
     display: block; 
 }
 
@@ -57,7 +55,7 @@ nav li > ul li a {
     background-color: #dcd6cd; 
     display: block;
     line-height: 2em;
-    padding: padding: 0.5em 2em;
+    padding: 0.5em 2em;
     text-decoration: none;
 }
 
