@@ -8,6 +8,7 @@ nav {
     overflow: hidden;
     position: sticky; 
     top: 0; 
+    z-index: 1000; 
 }
 
 nav ul {
@@ -45,6 +46,7 @@ nav li > ul {
     position: absolute;
     left: 0;
     top: 100%; 
+    z-index: 1000; 
 }
 
 nav li:hover > ul {
