@@ -47,11 +47,10 @@ nav li > ul {
     position: absolute;
     left: 0;
     top: 100%; 
-    z-index: 1000; 
+    z-index: 999; 
 }
 
 nav li:hover > ul {
-    position:absolute;
     display: block; 
 }
 
@@ -60,7 +59,7 @@ nav li > ul li {
 }
 
 nav li > ul li a {
-    color: #58355E;
+    color: #47323c;
     background-color: #dcd6cd; 
     display: block;
     line-height: 2em;
