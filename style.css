@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+body,html{height:100%;}
 nav{
     background-color: #d6cdbf;
     position: absolute;
@@ -20,7 +21,7 @@ nav{
 
 body {
     font-family: arial, sans-serif;
-    font-size: 12px;
+    font-size: 12pt;
     background-color: #f7f3ed;
     color: #2e271e;
     margin: 40pt;
