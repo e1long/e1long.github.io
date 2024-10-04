@@ -15,7 +15,7 @@ h1 {
     font-weight: bold;
 }
 
-h2 {s
+h2 {
     font-family: helvetica, sans-serif;
     font-size: 20pt;
     color: #423b32;
@@ -36,8 +36,8 @@ p {
 }
 
 .output-h2 {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size:23pt;
+    font-family: helvetica, sans-serif
+    font-size: 21pt;
     color: black;
     font-weight: bold;
 }
