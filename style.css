@@ -61,6 +61,7 @@ nav li > ul li a {
 
 nav li > ul li a:hover {
     color: white; 
+    background-color: #d6cdbf;
 }
 
 h1 {
