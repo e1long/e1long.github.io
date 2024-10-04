@@ -23,14 +23,16 @@ document.getElementById("myImage").addEventListener("mouseout", function() {
 });
 
 
-const navItems = document.querySelectorAll('.navbar a, .dropdown .dropbtn');
+document.addEventListener('DOMContentLoaded', () => {
+    const navItems = document.querySelectorAll('.navbar a, .dropdown .dropbtn');
 
-navItems.forEach(item => {
-    item.addEventListener('mouseover', function() {
-        this.style.backgroundColor = 'pink';
-    });
+    navItems.forEach(item => {
+        item.addEventListener('mouseover', function() {
+            this.style.backgroundColor = 'pink'; // Change color on hover
+        });
 
-    item.addEventListener('mouseout', function() {
-        this.style.backgroundColor = ''; 
+        item.addEventListener('mouseout', function() {
+            this.style.backgroundColor = ''; // Reset color
+        });
     });
 });
