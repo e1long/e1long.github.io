@@ -27,10 +27,10 @@ const navItems = document.querySelectorAll('.navbar a, .dropdown .dropbtn');
 
 navItems.forEach(item => {
     item.addEventListener('mouseover', function() {
-        this.style.backgroundColor = 'pink'; // Change color on mouseover
+        this.style.backgroundColor = 'pink';
     });
 
     item.addEventListener('mouseout', function() {
-        this.style.backgroundColor = ''; // Reset color on mouseout
+        this.style.backgroundColor = ''; 
     });
 });
