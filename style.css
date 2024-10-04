@@ -36,9 +36,9 @@ p {
 }
 
 .output-h2 {
-    font-family: helvetica, sans-serif
+    font-family: helvetica, sans-serif;
     font-size: 22pt;
-    color: black;
+    color: #423b32;
     font-weight: bold;
 }
 
