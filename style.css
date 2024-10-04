@@ -69,7 +69,10 @@ body {
     font-size: 12pt;
     color: #2e271e;
     background-color: #f7f3ed;
-    margin: 0;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
     padding: 0;
 }
 
