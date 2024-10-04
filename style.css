@@ -7,7 +7,8 @@ body,html{
 nav{
     background-color: #d6cdbf;
     position: fixed;
-    width: 150px;
+    width: 20%;
+    min-width:150px;
     height: 100%;
   }
 
