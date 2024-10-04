@@ -81,6 +81,7 @@ h1 {
     font-size: 25pt;
     color: #544b40;
     font-weight: bold;
+    margin: 20px;
 }
 
 h2 {
@@ -88,6 +89,7 @@ h2 {
     font-size: 20pt;
     color: #423b32;
     font-weight: bold;
+    margin: 20px;
 }
 
 h3 {
@@ -95,12 +97,14 @@ h3 {
     font-size: 16pt;
     color: #363028;
     font-weight: normal;
+    margin: 20px;
 }
 
 p {
     font-family: georgia, sans-serif;
     font-size: 14pt;
     color: #1c1204;
+    margin: 20px;
 }
 
 .output-h2 {
@@ -108,6 +112,7 @@ p {
     font-size: 22pt;
     color: #423b32;
     font-weight: bold;
+    margin: 20px;
 }
 
 a:link, a:visited {
