@@ -152,3 +152,8 @@ td.links {
 .indented-image {
     margin-left: 20px; 
 }
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+}
