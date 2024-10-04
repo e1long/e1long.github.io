@@ -5,3 +5,11 @@ document.getElementById("nameButton").addEventListener("click", function() {
         document.getElementById("nameOutput").innerText = "Hello, " + name + ",";
     }
 });
+
+document.getElementById("myImage").addEventListener("click", function() {
+    this.style.width = "400px";
+});
+
+document.getElementById("myImage").addEventListener("mouseout", function() {
+    this.style.width = "200px";
+});
