@@ -151,3 +151,7 @@ td.links {
     width: 50%;
     text-align: left;
 }
+
+.indented-image {
+    margin-left: 20px; 
+}
