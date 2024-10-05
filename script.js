@@ -17,10 +17,6 @@ document.getElementById("myImage").addEventListener("mouseout", function() {
     this.style.width = "200px";
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-    alert('JavaScript is loaded');
-});
-
 // onmouseover/onmouseout events
 document.addEventListener('DOMContentLoaded', () => {
     const navItems = document.querySelectorAll('.navbar a, .dropdown .dropbtn');
