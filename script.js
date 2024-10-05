@@ -8,6 +8,10 @@ document.getElementById("nameButton").addEventListener("click", function() {
     }
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('JavaScript is loaded on the ABOUT page');
+});
+
 // enlarged image when clicked
 document.getElementById("myImage").addEventListener("click", function() {
     this.style.width = "400px";
