@@ -66,11 +66,14 @@
 
 /*Footer*/
 footer {
+    width: 100%;
     background-color: #d6cdbf;
     padding: 20px 0;
+    text-align: center;
     position: relative;
-    width: 100%;
+    left: 0;
     bottom:0;
+    box-sizing: border-box;
 }
 
 .foot {
@@ -82,7 +85,7 @@ footer {
 }
 
 .foot a {
-    font size: 16px;
+    font-size: 16px;
     color: #7a6c58;
     text-decoration: none;
     padding: 10px 15px;
