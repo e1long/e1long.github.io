@@ -65,43 +65,40 @@
 /*navigation bar over*/
 
 /*Footer*/
-.footer-container{
+footer {
     background-color: #d6cdbf;
-    padding-bottom: 4rem;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    bottom:0;
 }
 
-.footer {
-    width: 80%;
-    height: 40vh;
-    background-color: #d6cdbf;
-    color: white;
+footer.foot {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 0 auto;
+    gap: 15px;
+    font-family: georgia, sans-serif;
 }
 
-.footer-heading {
-    display: flex;
-    flex-direction: column;
-    margin-right: 4rem;
-}
-
-.footer-heading h2 {
-    margin-bottom: 2rem;
-}
-
-.footer-heading a {
-    color: white;
+.foot a {
+    font size: 16px;
+    color: #7a6c58;
     text-decoration: none;
-    margin-bottom: 0.5rem;
+    padding: 10px 15px;
+    text-align: center;
 }
 
-.footer-heading a:hover {
-    color: red;
-    transition: 0.3s ease-out;
+.foot a:hover {
+    color: white;
 }
 
+.footer-projects-label {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    color: #7a6c58;
+}
 /*Footer over*/
 body {
     font-family: arial, sans-serif;
