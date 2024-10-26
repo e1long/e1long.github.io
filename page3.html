@@ -1,4 +1,34 @@
 <!-- CONTACT -->
+ <!-- 8 distinct form elements used
+    1. Text input
+    2. Email input
+    3. Message (textarea)
+    4. Radio button
+    5. Conditional input/telephone input
+    6. Dropdown
+    7. Checkboxes
+    8. Submit button
+
+    Submit & Clear button process
+    html code:
+    <button type="submit">Submit</button>
+    <button type="reset" onclick="togglePhoneInput()">Clear</button>
+
+    java code:
+    storing data
+    localStorage.setItem("contactName", name);
+    localStorage.setItem("contactEmail", email);
+    localStorage.setItem("contactMessage", message);
+    localStorage.setItem("contactMethod", contactMethod);
+    localStorage.setItem("contactPhoneNumber", phone);
+    localStorage.setItem("howHeard", howHeard);
+
+    clearing data
+    document.getElementById("clearButton").addEventListener("click", function() {
+    document.getElementById("contactForm").reset(); // Clear all form fields
+    localStorage.clear(); // Clear local storage
+    
+     -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -34,35 +64,50 @@
 <br>
 <!-- Contact Form -->
 <form id="contactForm">
-    <!-- Name Text Field -->
+    <!-- 1. Name Text Field -->
     <label for="contactName">Your Name:</label>
     <input type="text" id="contactName" name="contactName" required><br><br>
 
-    <!-- Email Text Field -->
+    <!-- 2. Email Text Field -->
     <label for="contactEmail">Your Email:</label>
     <input type="email" id="contactEmail" name="contactEmail" required><br><br>
 
-    <!-- Multiple Text Field-->
-     <label for="contactMessage">Your Message:</label>
-     <input type="contactMessage" name="contactMessage" rows="4" cols="50" required></textarea><br><br>
+    <!-- 3. Multiple Text Field (Message) -->
+    <label for="contactMessage">Your Message:</label>
+    <textarea id="contactMessage" name="contactMessage" rows="4" cols="50" required></textarea><br><br>
 
-    <!-- Radio Buttions-->
-     <label>Preferred Method of Contact:</label><br>
-     <input type="radio" id="contactEmailMethod" name="contactMethod" value="Email" required onclick="togglePhoneInput()">
-     <label for="contactEmailMethod">Email</label><br>
-     <input type="radio" id="contactPhoneMethod" name="contactMethod" value="Phone" required onclick="togglePhoneInput()">
-     <label for="contactPhoneMethod">Phone</label><br><br>
+    <!-- 4. Contact Method (Radio Buttons) -->
+    <label>Preferred Method of Contact:</label><br>
+    <input type="radio" id="contactEmailMethod" name="contactMethod" value="Email" required onclick="togglePhoneInput()">
+    <label for="contactEmailMethod">Email</label><br>
+    <input type="radio" id="contactPhoneMethod" name="contactMethod" value="Phone" required onclick="togglePhoneInput()">
+    <label for="contactPhoneMethod">Phone</label><br><br>
 
-    <!-- Phone Number Input (hidden unless selected)-->
-     <div id="phoneNumberDiv" style="display:none;">
+    <!-- 5. Phone Number Input (Conditional input) -->
+    <div id="phoneNumberDiv" style="display: none;">
         <label for="contactPhoneNumber">Your Phone Number:</label>
-        <input type="tel" id="contactPhoneNumber" name="contactPhoneNumber" pattern="[0-9]{10}" placeholders="1234567890" required>
-     </div><br>
+        <input type="tel" id="contactPhoneNumber" name="contactPhoneNumber" pattern="[0-9]{10}" placeholder="1234567890">
+    </div><br>
 
-    <!-- Submit and Reset Buttions-->
-     <button type="submit">Submit</button>
-     <button type="reset">Clear</button>
+    <!-- 6. How Did You Hear About Me? (dropdown) -->
+    <label for="knowSelect">How Did You Hear About Me?</label>
+    <select id="knowSelect" name="heardSelection" required>
+        <option value="">--Please choose an option--</option>
+        <option value="socialMedia">Social Media</option>
+        <option value="friend">Friend</option>
+        <option value="searchEngine">Search Engine</option>
+        <option value="other">Other</option>
+    </select><br><br>
 
+    <!-- 7. Checkboxes -->
+    <input type="checkbox" id="agreeUpdates" name="agreements" value="Agree to Receive Updates" required> 
+    <label for="agreeUpdates">I agree to receive updates</label><br>
+    <input type="checkbox" id="agreeTerms" name="agreements" value="Agree to Terms and Conditions" required> 
+    <label for="agreeTerms">I agree to the Terms and Conditions</label><br><br>
+
+    <!-- 8. Submit and Reset Buttons -->
+    <button type="submit">Submit</button>
+    <button type="reset" onclick="togglePhoneInput()">Clear</button>
 </form>
 
 <br>  
