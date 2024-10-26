@@ -27,11 +27,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     navItems.forEach(item => {
         item.addEventListener('mouseover', function() {
-            this.style.backgroundColor = 'pink'; // Change color on hover
+            this.style.backgroundColor = 'pink'; 
         });
 
         item.addEventListener('mouseout', function() {
-            this.style.backgroundColor = ''; // Reset color
+            this.style.backgroundColor = '';
         });
     });
 });
@@ -96,6 +96,11 @@ function createContactForm() {
         radioInput.value = method;
         radioInput.required = true;
 
+        // Event listener for showing/hiding phone number input
+        radioInput.addEventListener("change", function() {
+            togglePhoneInput();
+        });
+
         const radioLabel = document.createElement("label");
         radioLabel.for = `contact${method}Method`;
         radioLabel.innerText = method;
@@ -104,6 +109,76 @@ function createContactForm() {
         form.appendChild(radioLabel);
         form.appendChild(document.createElement("br"));
     });
+
+    form.appendChild(document.createElement("br"));
+
+    // Phone Number Input (conditional input)
+    const phoneNumberDiv = document.createElement("div");
+    phoneNumberDiv.id = "phoneNumberDiv";
+    phoneNumberDiv.style.display = "none"; // Hidden by default
+
+    const phoneLabel = document.createElement("label");
+    phoneLabel.for = "contactPhoneNumber";
+    phoneLabel.innerText = "Your Phone Number:";
+
+    const phoneInput = document.createElement("input");
+    phoneInput.type = "tel";
+    phoneInput.id = "contactPhoneNumber";
+    phoneInput.name = "contactPhoneNumber";
+    phoneInput.pattern = "[0-9]{10}";
+    phoneInput.placeholder = "1234567890"; // Placeholder text
+
+    phoneNumberDiv.appendChild(phoneLabel);
+    phoneNumberDiv.appendChild(phoneInput);
+    form.appendChild(phoneNumberDiv);
+
+    // How Did You Hear About Us? (dropdown)
+    const howHeardLabel = document.createElement("label");
+    howHeardLabel.innerText = "How Did You Hear About Us?";
+    form.appendChild(howHeardLabel);
+    form.appendChild(document.createElement("br"));
+
+    const howHeardSelect = document.createElement("select");
+    howHeardSelect.id = "howHeardSelect";
+    howHeardSelect.name = "howHeard";
+    howHeardSelect.required = true;
+
+    const options = ["", "Social Media", "Friend", "Search Engine", "Other"];
+    options.forEach(option => {
+        const opt = document.createElement("option");
+        opt.value = option.toLowerCase().replace(/ /g, "-");
+        opt.innerText = option;
+        howHeardSelect.appendChild(opt);
+    });
+
+    form.appendChild(howHeardSelect);
+    form.appendChild(document.createElement("br"));
+
+    // Agreement Checkboxes
+    const agreeUpdatesLabel = document.createElement("label");
+    const agreeUpdatesInput = document.createElement("input");
+    agreeUpdatesInput.type = "checkbox";
+    agreeUpdatesInput.id = "agreeUpdates";
+    agreeUpdatesInput.name = "agreements";
+    agreeUpdatesInput.required = true;
+    
+    agreeUpdatesLabel.appendChild(agreeUpdatesInput);
+    agreeUpdatesLabel.appendChild(document.createTextNode("I agree to receive updates"));
+
+    const agreeTermsLabel = document.createElement("label");
+    const agreeTermsInput = document.createElement("input");
+    agreeTermsInput.type = "checkbox";
+    agreeTermsInput.id = "agreeTerms";
+    agreeTermsInput.name = "agreements";
+    agreeTermsInput.required = true;
+
+    agreeTermsLabel.appendChild(agreeTermsInput);
+    agreeTermsLabel.appendChild(document.createTextNode("I agree to the Terms and Conditions"));
+
+    form.appendChild(document.createElement("br"));
+    form.appendChild(agreeUpdatesLabel);
+    form.appendChild(document.createElement("br"));
+    form.appendChild(agreeTermsLabel);
     form.appendChild(document.createElement("br"));
 
     // Submit and Reset buttons
@@ -118,7 +193,7 @@ function createContactForm() {
     form.appendChild(submitButton);
     form.appendChild(resetButton);
 
-    document.body.appendChild(form);
+    document.getElementById("formContainer").appendChild(form);
 
     // Event listener for submission
     form.addEventListener("submit", function(event) {
@@ -128,23 +203,40 @@ function createContactForm() {
         const email = document.getElementById("contactEmail").value;
         const message = document.getElementById("contactMessage").value;
         const contactMethod = document.querySelector('input[name="contactMethod"]:checked').value;
-        const subscriptions = Array.from(document.querySelectorAll('input[name="subscriptions"]:checked')).map(cb => cb.value);
+        const phone = contactMethod === "Phone" ? document.getElementById("contactPhoneNumber").value : null;
+        const howHeard = document.getElementById("howHeardSelect").value;
 
+        // Collect agreement values
+        const agreeUpdates = document.getElementById("agreeUpdates").checked;
+        const agreeTerms = document.getElementById("agreeTerms").checked;
+
+        // Store data in local storage
         localStorage.setItem("contactName", name);
         localStorage.setItem("contactEmail", email);
         localStorage.setItem("contactMessage", message);
         localStorage.setItem("contactMethod", contactMethod);
-        localStorage.setItem("subscriptions", JSON.stringify(subscriptions)); // Store array as JSON
+        localStorage.setItem("contactPhoneNumber", phone);
+        localStorage.setItem("howHeard", howHeard);
+        localStorage.setItem("agreeUpdates", agreeUpdates);
+        localStorage.setItem("agreeTerms", agreeTerms);
 
         alert("Your contact details have been stored!");
     });
 
     // Event listener for reset
-    form.addEventListener("reset", function() {
+    document.getElementById("clearButton").addEventListener("click", function() {
+        document.getElementById("contactForm").reset();
         localStorage.clear();
-        alert("Form has been cleared and local storage reset.");
+
+        alert("Form has been cleared .");
     });
+
+    // Function to toggle phone input visibility
+    function togglePhoneInput() {
+        const isPhoneSelected = document.getElementById("contactPhoneMethod").checked;
+        phoneNumberDiv.style.display = isPhoneSelected ? "block" : "none";
+    }
 }
 
-// Call the function to create the contact form
+// Create the contact form
 createContactForm();
