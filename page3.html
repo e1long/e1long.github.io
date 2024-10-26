@@ -28,9 +28,43 @@
 </div>
 
     <!-- Content -->
-
 <h1>Get in Touch</h1>
 <img id="ocean" src="ocean.jpg" alt="ocean"class="responsive-image" cursor: pointer;">
+<br>
+<br>
+<!-- Contact Form -->
+<form id="contactForm">
+    <!-- Name Text Field -->
+    <label for="contactName">Your Name:</label>
+    <input type="text" id="contactName" name="contactName" required><br><br>
+
+    <!-- Email Text Field -->
+    <label for="contactEmail">Your Email:</label>
+    <input type="email" id="contactEmail" name="contactEmail" required><br><br>
+
+    <!-- Multiple Text Field-->
+     <label for="contactMessage">Your Message:</label>
+     <input type="contactMessage" name="contactMessage" rows="4" cols="50" required></textarea><br><br>
+
+    <!-- Radio Buttions-->
+     <label>Preferred Method of Contact:</label><br>
+     <input type="radio" id="contactEmailMethod" name="contactMethod" value="Email" required onclick="togglePhoneInput()">
+     <label for="contactEmailMethod">Email</label><br>
+     <input type="radio" id="contactPhoneMethod" name="contactMethod" value="Phone" required onclick="togglePhoneInput()">
+     <label for="contactPhoneMethod">Phone</label><br><br>
+
+    <!-- Phone Number Input (hidden unless selected)-->
+     <div id="phoneNumberDiv" style="display:none;">
+        <label for="contactPhoneNumber">Your Phone Number:</label>
+        <input type="tel" id="contactPhoneNumber" name="contactPhoneNumber" pattern="[0-9]{10}" placeholders="1234567890" required>
+     </div><br>
+
+    <!-- Submit and Reset Buttions-->
+     <button type="submit">Submit</button>
+     <button type="reset">Clear</button>
+
+</form>
+
 <br>  
 <h3>Email: e1long@torontomu.ca</h3>
 <h3>LinkedIn: <a href = "https://www.linkedin.com/in/emily-long-7331201a2/"target="_blank" > LinkedIn Profile Link</a></h3>
