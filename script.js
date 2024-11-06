@@ -36,3 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// Text resize widget
+<a href="javascript:void(0);" onclick="javascript:body.style.fontSize='.5em'"><span
+style="font-size: xx-small;">Small</span></a>
