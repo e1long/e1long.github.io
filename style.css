@@ -16,13 +16,8 @@
     text-decoration: none !important;
 }
 
-.home-link {
-    font-family: 'Fraunces', serif; 
-    font-weight: 700;
-    font-style: italic;
-    font-size: 26px !important; 
-    text-decoration: none;
-    color: #64594a;
+.topnav-right {
+    float: right;
 }
 
 .dropdown {
@@ -206,14 +201,21 @@ td.links {
 }
 
 /* image formating */
-.indented-image {
-    margin-left: 20px; 
+.image-container {
+    text-align: center !important; 
+}
+
+.centred-image {
+    cursor: pointer; 
+    max-width: 100%; 
+    height: auto; 
 }
 
 .responsive-image {
     width: 100%;
     height: auto;
 }
+
 
 /* contact form styling */
 #contactForm {
