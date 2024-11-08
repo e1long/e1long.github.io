@@ -58,9 +58,13 @@ window.onload = function() {
 
 // Alt text for image gallery 
 function showAltText(imgId, altTextId) {
-    const image = document.getElementById(imgId);
-    const altText = image.getAttribute("alt");
-    document.getElementById(altTextId).innerText = altText;
+    const altTextElement = document.getElementById(altTextId);
+    if (altTextElement.innerText === "") {
+        const image = document.getElementById(imgId);
+        altTextElement.innerText = image.getAttribute("alt");
+    } else {
+        altTextElement.innerText = ""; 
+    }
 }
 
 //Dark theme for accessibility
