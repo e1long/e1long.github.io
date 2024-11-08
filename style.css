@@ -264,8 +264,31 @@ td.links {
     background-color: #544b40;
 }
 
-/*Dark Theme*/
+/*image gallery*/
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
+figure {
+    text-align: center;
+    max-width: 300px;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.alt-text {
+    font-style: italic;
+    color: #555;
+}
+/*Dark Theme*/
 /* Dark Mode Styles */
 .darkmode .navbar {
     background-color: #2e2b26; /* Darker background for navbar */

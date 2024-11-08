@@ -56,6 +56,13 @@ window.onload = function() {
     });
 }
 
+// Alt text for image gallery 
+function showAltText(imgId, altTextId) {
+    const image = document.getElementById(imgId);
+    const altText = image.getAttribute("alt");
+    document.getElementById(altTextId).innerText = altText;
+}
+
 //Dark theme for accessibility
 function toggleColorTheme() {
     const body = document.body;
