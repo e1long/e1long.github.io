@@ -61,7 +61,6 @@ function toggleColorTheme() {
     const body = document.body;
     body.classList.toggle("darkmode");
 
-    // Log the current theme class for debugging
     console.log("Current class on body: ", body.classList);
 
     if (body.classList.contains("darkmode")) {
