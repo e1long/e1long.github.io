@@ -37,5 +37,38 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Text resize widget
-<a href="javascript:void(0);" onclick="javascript:body.style.fontSize='.5em'"><span
-style="font-size: xx-small;">Small</span></a>
+function setFontSize(size) {
+    const textElements = document.querySelectorAll('h1, h2, h3, p, span, li, a'); // Add other tags you want to affect
+
+    textElements.forEach(function(element) {
+        element.style.fontSize = size;
+    });
+}
+
+// Add event listeners for all font size links
+window.onload = function() {
+    const links = document.querySelectorAll('.font-size-link');
+    links.forEach(function(link) {
+        link.addEventListener('click', function() {
+            const size = this.getAttribute('data-size');
+            setFontSize(size);
+        });
+    });
+}
+
+//Dark theme for accessibility
+function toggleColorTheme() {
+    const body = document.body;
+    body.classList.toggle("darkmode");
+
+    // Log the current theme class for debugging
+    console.log("Current class on body: ", body.classList);
+
+    if (body.classList.contains("darkmode")) {
+        body.style.backgroundColor = "#000000";  // Temp for debugging
+    } else {
+        body.style.backgroundColor = "#f7f3ed";  // Temp for debugging
+    }
+}
+
+document.getElementById("darkModeToggle").addEventListener("click", toggleColorTheme);

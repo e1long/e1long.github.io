@@ -264,3 +264,90 @@ td.links {
     background-color: #544b40;
 }
 
+/*Dark Theme*/
+
+/* Dark Mode Styles */
+.darkmode .navbar {
+    background-color: #2e2b26; /* Darker background for navbar */
+}
+
+.darkmode .navbar a {
+    color: #c8b6a3; /* Light beige for text */
+}
+
+.darkmode .dropdown .dropbtn {
+    color: #c8b6a3; /* Match text color in dark mode */
+}
+
+.darkmode .navbar a:hover, .darkmode .dropdown:hover .dropbtn {
+    color: #ffffff; /* White on hover */
+}
+
+.darkmode .dropdown-content {
+    background-color: #3d3a35; /* Darker dropdown background */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+}
+
+.darkmode .dropdown-content a {
+    color: #c8b6a3;
+}
+
+.darkmode .dropdown-content a:hover {
+    color: #ffffff;
+}
+
+/* Footer */
+.darkmode footer {
+    background-color: #2e2b26;
+}
+
+.darkmode .foot a {
+    color: #c8b6a3;
+}
+
+.darkmode .foot a:hover {
+    color: #ffffff;
+}
+
+.darkmode .footer-projects-label {
+    color: #c8b6a3;
+}
+
+/* Body and Text */
+.darkmode body {
+    background-color: #000000 !important;
+    color: #e0d7c8 !important;
+}
+
+.darkmode h1 {
+    color: #d3c7b5; 
+}
+
+.darkmode h2 {
+    color: #cfc4b1;
+}
+
+.darkmode h3 {
+    color: #b5a896;
+}
+
+.darkmode p {
+    color: #e0d7c8;
+}
+
+.darkmode .output-h2 {
+    color: #cfc4b1;
+}
+
+.darkmode figcaption {
+    color: #c8b6a3 !important;
+}
+
+/* Link styling */
+.darkmode a:link, .darkmode a:visited {
+    color: #c8b6a3;
+}
+
+.darkmode a:hover {
+    color: #ffffff;
+}
